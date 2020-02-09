@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chl.sys.mapper.PermissionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.chl.sys.pojo.Permission">
+        <id column="per_id" property="perId" />
+        <result column="pid" property="pid" />
+        <result column="type" property="type" />
+        <result column="per_name" property="perName" />
+        <result column="per_code" property="perCode" />
+        <result column="icon" property="icon" />
+        <result column="href" property="href" />
+        <result column="target" property="target" />
+        <result column="open" property="open" />
+        <result column="remark" property="remark" />
+        <result column="available" property="available" />
+        <result column="sort" property="sort" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        per_id, pid, type, per_name, per_code, icon, href, target, open, remark, available, sort, create_time, update_time
+    </sql>
+
+</mapper>

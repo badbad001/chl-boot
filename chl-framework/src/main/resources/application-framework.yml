@@ -1,0 +1,16 @@
+﻿# your project's name and code
+project:
+  code: data_exchange
+  name: chl-boot
+  fullName: chl-boot系统
+  superAdmins: chl
+  version: 1.0.0
+  #图标
+  icon: /resources/images/user_icon.jpg #/resources/favicon.ico这个是马图片
+  #背景图的样式
+  loginBackImg: background:url('/resources/images/login_bg.jpg')  no-repeat center center
+visitLog:
+  enable: false
+# 上传文件保存路径
+upload:
+  path: E:/upload/chl_boot/

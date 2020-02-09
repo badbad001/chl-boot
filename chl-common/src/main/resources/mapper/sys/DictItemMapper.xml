@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chl.sys.mapper.DictItemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.chl.sys.pojo.DictItem">
+        <id column="ITEM_ID" property="itemId" />
+        <result column="TYPE_ID" property="typeId" />
+        <result column="PARENT_ID" property="parentId" />
+        <result column="CODE" property="code" />
+        <result column="NAME" property="name" />
+        <result column="SORT" property="sort" />
+        <result column="MEMO" property="memo" />
+        <result column="IS_ENABLED" property="isEnabled" />
+        <result column="RESERVED1" property="reserved1" />
+        <result column="RESERVED2" property="reserved2" />
+        <result column="RESERVED3" property="reserved3" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ITEM_ID, TYPE_ID, PARENT_ID, CODE, NAME, SORT, MEMO, IS_ENABLED, RESERVED1, RESERVED2, RESERVED3
+    </sql>
+
+</mapper>
